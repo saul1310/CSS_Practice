@@ -1,1 +1,38 @@
 
+
+#Main{
+    background-image: url('/background.jpeg');
+    background-size: cover; /* Fills the screen, but may crop */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    margin: 0;
+
+
+}
+
+#loveYourLife {
+    background-image: url('/background2.jpeg');
+    background-size: cover; /* Fills the screen, but may crop */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    margin: 0;
+
+
+}
+
+#work {
+    background-image: url('/background2.jpeg');
+    background-size: cover; /* Fills the screen, but may crop */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    margin: 0;
+
+
+
+}
