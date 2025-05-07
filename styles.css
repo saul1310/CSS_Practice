@@ -50,9 +50,9 @@
 
 .container {
     display: flex;
-    flex-direction: row; 
-    justify-content: center; 
-    align-items: flex-start; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
     height: 100vh;
     width: 100vw; 
   
@@ -90,13 +90,22 @@ h1 {
 .navbar {
     width: 97vw;
     height: 4vh;
+    position: relative;
     background-color: rgba(53, 161, 125, 0.719);
     border-radius: 10px;
     border-bottom: 1px solid black;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
+}
+.test {
+    height : 10%;
+    width : 10%;
+    background-color: red;
+
+
+
 }
 
 .invisibletext {
@@ -104,6 +113,30 @@ h1 {
 
 
 }
+.left, .right {
+    z-index: 1;
+  }
+  
+  .center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+.double-line-symbol {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .double-line-symbol span {
+    display: block;
+    width: 40px;      /* Length of each line */
+    height: 4px;      /* Thickness of each line */
+    background-color: black;
+    margin: 6px 0;    /* Space between the lines */
+    border-radius: 2px; /* Rounded ends (optional) */
+  }
+  
 
 .sidebar {
     position: fixed;
@@ -130,8 +163,12 @@ h1 {
 #menu-button {
  
     background-color: rgba(0, 0, 0, 0);
+    display: flex;
     color:white;
     cursor: pointer;
+    justify-content: center;
+    align-items: flex-end;
+  
 
 
 
@@ -143,12 +180,12 @@ h1 {
 
 .double-line-symbol span {
     display: block;
-    height: 100px;         /* Thin line */
-    width: 100px;  
-    border-width: 20px;       /* Reasonable icon width */
-    background-color: black;
+    height: .05em;         /* Thin line */
+    width: 1em;  
+    border-width: 5px;       /* Reasonable icon width */
+    background-color: rgb(255, 255, 255);
     margin: 6px 0;       /* Spacing between lines */
-    border-radius: 2px;  /* Slight rounding */
+    border-radius: 6px;  
   }
 
 .overlay {
