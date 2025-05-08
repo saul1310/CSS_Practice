@@ -47,8 +47,15 @@ html, body {
     background-position: center;
     height: 100vh;
     width: 100vw;
+    transition: transform 0.3s ease;
 
 
+
+
+}
+
+#work:hover {
+    transform: scale(1.1);
 
 
 }
@@ -105,6 +112,7 @@ h1 {
 .content-area {
     flex: 1;
     display: flex;
+    flex-direction: column5;
     justify-content: center;
     align-items: center;
   }
@@ -240,4 +248,28 @@ border-radius: 8px;
 .scrollable-div::-webkit-scrollbar {
     display: none;
 }
+
+.get-started-button {
+
+    height: 2em;
+    width : 10em;
+    display: flex;
+    background-color: rgb(201, 67, 67);
+    margin-top: 2em;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.zoom-box {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    transition: transform 0.3s ease; /* smooth animation */
+  }
+
+  .zoom-box:hover {
+    transform: scale(1.1); 
+ 
+  }
 
