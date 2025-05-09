@@ -81,10 +81,12 @@ html, body {
    ==               TYPOGRAPHY & FONTS              ==
    =================================================== */
 
+
 body {
-    font-family: "League Gothic", sans-serif;
-    font-weight: bold;
-    font-size: large;
+    font-family: "Dancing Script", ;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
 
 h1 {
@@ -92,19 +94,35 @@ h1 {
     font-size: 40px;
     color:rgb(255, 255, 255);
     
-    
-
-
-
-
+  
 }
-.Smalltext {
-    font-family: "League Gothic", sans-serif;
-    font-size: 12px;
 
-
-
+.dancing-script {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
+
+ 
+.dancing-small {
+  @extend .dancing-script;
+  font-size: 1rem;
+}
+
+.dancing-medium {
+  @extend .dancing-script;
+  font-size: 2rem;
+}
+
+.dancing-large {
+  @extend .dancing-script;
+  font-size: 3rem;
+  color: white;
+}
+
+
+
 .navbar {
     width: 97vw;
     height: 4vh;
@@ -264,11 +282,17 @@ border-radius: 8px;
     height: 2em;
     width : 10em;
     display: flex;
-    background-color: rgb(201, 67, 67);
+    background-color: rgb(255, 255, 255);
     margin-top: 2em;
     border-radius: 8px;
     justify-content: center;
     align-items: center;
+    transition: transform 0.1s ease;
+}
+
+.get-started-button:hover{
+  background-color: rgb(168, 160, 160);
+
 }
 
 .zoom-box {
