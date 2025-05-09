@@ -5,10 +5,7 @@ html, body {
     padding: 0;
   }
 #Main{
-    background-image: url('/background.jpeg');
-    background-size: cover; /* Fills the screen, but may crop */
-    background-repeat: no-repeat;
-    background-position: center;
+    
     height: 100vh; /* Full viewport height */
     width: 100vw; /* Full viewport width */
     margin: 0;
@@ -17,10 +14,6 @@ html, body {
 }
 
 #loveYourLife {
-    background-image: url('/background.jpeg');
-    background-size: cover; /* Fills the screen, but may crop */
-    background-repeat: no-repeat;
-    background-position: center;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -313,4 +306,34 @@ border-radius: 8px;
   background: red;
   border-radius: 20px;
   z-index: 10000
+}
+
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: -9999; /* Ensure it's way behind everything */
+}
+
+#video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -9999;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+#video-background .content {
+  position: relative;
+  z-index: 1;
+  color: white; /* Or whatever fits the video */
+  text-align: center;
+  padding: 2rem;
 }
