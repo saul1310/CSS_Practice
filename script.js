@@ -12,6 +12,8 @@ menuBtn.addEventListener('click',()=>{
     sidebar.classList.add('active');
     overlay.classList.add('active');
 
+   
+
 
 
 
