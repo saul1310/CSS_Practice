@@ -3,7 +3,9 @@ const menuBtn = document.getElementById('menu-button');
 const sidebar = document.getElementById('sidebar');
 const closeBtn = document.getElementById('close-button');
 const overlay = document.getElementById('overlay');
-
+const navbarTexts = document.querySelectorAll('nav-bar-text');
+const testelement = document.getElementById('nav-bar-text1')
+const navBar = document.getElementById("navbar");
 
 
 menuBtn.addEventListener('click',()=>{
@@ -27,18 +29,48 @@ closeBtn.addEventListener('click', () => {
 
 });
 
-const revealDiv = document.getElementById("navbar");
+
+
+navBar.addEventListener('mouseover' , () => {
+     navBar.classList.add("navbargrey")
+      testelement.classList.add("black")
+      navbarTexts.forEach(el => el.classList.add('black'));
+      
+
+
+
+
+});
+
+navBar.addEventListener('mouseleave', () => {
+     navBar.classList.remove('navbargrey');
+      testelement.classList.remove("black")
+    
+
+
+
+})
+
+
+
+
 const triggerPoint = 120; 
  window.addEventListener("scroll", function () {
     
 
     if (window.scrollY > triggerPoint) {
-      revealDiv.classList.add("sticky");
-      revealDiv.classList.add("white")
+      navBar.classList.add("sticky");
+      navBar.classList.add("navbargrey")
+      testelement.classList.add("black")
+      navbarTexts.forEach(el => el.classList.add('black'));
       
       
     } else {
-      revealDiv.classList.remove("sticky"); 
-      revealDiv.classList.remove("white"); 
+      navBar.classList.remove("sticky");  
+      navBar.classList.remove('navbargrey');
+
+      
     }
   });
+
+

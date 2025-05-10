@@ -1,5 +1,5 @@
 
-html, body {
+html {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -68,6 +68,7 @@ html, body {
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full height to center in screen */
+    width: 100vw;
   }
 
 /* ===================================================
@@ -80,6 +81,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+     overflow-x: hidden;
   }
 
 h1 {
@@ -211,7 +213,7 @@ border-radius: 8px;
     width: 80%;
     height:100%;
     background-color: #f1eee6;
-    padding:1rem;
+ 
     transition: left 0.3s ease;
     z-index: 1000;
 
@@ -274,7 +276,7 @@ border-radius: 8px;
 }
 
 .scrollable-div {
-    width: 50%; /* Adjust width as needed */
+    width: 50%; 
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
@@ -282,7 +284,7 @@ border-radius: 8px;
     background-color: rgba(121, 61, 177, 0.651);
 }
 
-/* Hide scrollbar */
+
 .scrollable-div::-webkit-scrollbar {
     display: none;
 }
@@ -371,8 +373,17 @@ border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* optional: for visual effect */
 }
 
-.white {
+.navbargrey {
 
 
-  background: white;
+  background: #c9cecf;
 }
+
+
+
+.black {
+  color : black;
+
+
+}
+
