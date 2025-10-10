@@ -4,7 +4,7 @@ html {
     margin: 0;
     padding: 0;
   }
-#Main
+#Main{
     
     height: 100vh; /* Full viewport height */
     width: 100vw; /* Full viewport width */
